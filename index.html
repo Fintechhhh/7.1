@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Gastos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>💰 Control de Gastos</h1>
+            <p class="subtitulo">
+                Administra tu presupuesto mensual
+            </p>
+
+            <div class="form-group">
+
+                <label>Categoría</label>
+
+                <select id="categoria">
+                    <option value="1">🍔 Comida</option>
+                    <option value="2">🚌 Transporte</option>
+                    <option value="3">🎮 Entretenimiento</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Monto</label>
+
+                <input
+                    type="number"
+                    id="gasto"
+                    placeholder="Ingrese el gasto">
+
+            </div>
+
+            <button onclick="registrarGasto()">
+                Registrar gasto
+            </button>
+
+            <div class="presupuesto-box">
+
+                <h3>Presupuesto disponible</h3>
+
+                <p id="presupuesto">$10.000</p>
+
+            </div>
+
+        </div>
+
+        <div class="card historial">
+
+            <h2>📋 Historial</h2>
+
+            <ul id="historial"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
